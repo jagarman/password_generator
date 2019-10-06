@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <span class="navbar-brand mb-0 h1">Password Generator</span>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12 mx-auto mainColumn">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Generate a Password</h4>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <textarea readonly id="password" placeholder="Your Secure Password"
+              aria-label="Generated Password"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button onclick='createPassword()' class="btn btn-lg btn-primary btn-block" id="generate">Generate
+              Password</button>
+          </div>
+          <div class="col-sm-6">
+            <button class="btn btn-lg btn-secondary btn-block" id="copy">
+              Copy to Clipboard
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">   </script>
+</body>
+
+</html>
+
+<!-- Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+
+The user will be prompted to choose from the following password criteria:
+
+* Length (must be between 8 and 128 characters)
+
+* Character type:
+
+  * Special characters ([see examples](https://www.owasp.org/index.php/Password_special_characters))
+
+  * Numeric characters
+
+  * Lowercase characters
+
+  * Uppercase characters
+
+The application should validate user input and ensure that at least one character type is selected.
+
+Once all prompts are answered, the user will be presented with a password matching the answered prompts. Displaying the generated password in an alert is acceptable, but attempt to write the password to the page instead.
+
+As a bonus, the user should also have the option to click a button to copy the password to their clipboard.
+
+Your application should have a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+
+Your application should be deployed to GitHub Pages.
+
+Your application's GitHub repository should contain a README.md file explaining the purpose and functionality of the application. The README.md file should include a screenshot of the completed application as well as a link to the deployed GitHub Pages URL. -->
